@@ -186,6 +186,7 @@ Updates the coordinator with the info for the given build _id_
 | Name | Type | Desc |
 | ---- | ---- | ---- |
 | id | Number | The build id |
+| token | String | The runner token |
 | data | Object | The build info |
 | cb | Function | `function(err, body, res)` |
 
