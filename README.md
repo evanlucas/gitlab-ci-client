@@ -60,7 +60,7 @@ Create a new project with the given _data_
 | Name | Type | Desc |
 | ---- | ---- | ---- |
 | data | Object | The params to create |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 Where `data` requires:
 
@@ -84,7 +84,7 @@ Updates the project with the given _id_
 | ---- | ---- | ---- |
 | id | String, Number | The project id |
 | data | Object | The params to create |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 Where `data` requires:
 
@@ -107,7 +107,7 @@ Deletes the project with the given _id_
 | Name | Type | Desc |
 | ---- | ---- | ---- |
 | id | String, Number | The project id |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 #### Projects.link()
 
@@ -119,7 +119,7 @@ Adds a runner to the given project _id_
 | ---- | ---- | ---- |
 | id | String, Number | The project id |
 | runnerId | String, Number | The runner id |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 #### Projects.unlink()
 
@@ -131,7 +131,7 @@ Remove a runner from the given project _id_
 | ---- | ---- | ---- |
 | id | String, Number | The project id |
 | runnerId | String, Number | The runner id |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 ### Runners
 
@@ -147,7 +147,7 @@ List all of the registered runners
 
 | Name | Type | Desc |
 | ---- | ---- | ---- |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 #### Runners.register()
 
@@ -158,7 +158,7 @@ Registers the runner with the given _data_
 | Name | Type | Desc |
 | ---- | ---- | ---- |
 | data | Object | The runner info |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 ### Builds
 
@@ -175,7 +175,7 @@ Tells the coordinator to run this next build
 | Name | Type | Desc |
 | ---- | ---- | ---- |
 | token | String | The runner token |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 #### Builds.update()
 
@@ -188,7 +188,7 @@ Updates the coordinator with the info for the given build _id_
 | id | Number | The build id |
 | token | String | The runner token |
 | data | Object | The build info |
-| cb | Function | `function(err, body, res)` |
+| cb | Function | `function(err, body)` |
 
 Where data can have:
 
