@@ -1,6 +1,6 @@
 {
   "name": "gitlab-ci-client",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "GitLab CI API client",
   "main": "index.js",
   "scripts": {
